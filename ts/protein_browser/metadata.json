@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "protein_browser",
+  "stanza:label": "Protein Browser",
+  "stanza:definition": "Display positions of detected peptides, PSMs, variants, etc.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "uniprot",
+       "stanza:example": "Q9NYF8",
+       "stanza:description": "UniProt ID",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "",
+       "stanza:description": "dataset e.g.'DS810_1 DS810_2'",
+       "stanza:required": false
+     }
+  ],
+  "stanza:usage": "<togostanza-protein_browser uniprot='Q9NYF8'></togostanza-protein_browser>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Protein",
+  "stanza:display": "Other",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "MIT",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-03-06"
+}

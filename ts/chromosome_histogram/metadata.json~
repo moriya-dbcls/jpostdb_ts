@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "chromosome_histogram",
+  "stanza:label": "Chromosome histogram",
+  "stanza:definition": "Greeting.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "DS81_1 DS81_2 DS81_3",
+       "stanza:description": "dataset",
+       "stanza:required": true
+     }
+  ],
+  "stanza:usage": "<togostanza-chromosome_histogram dataset='DS81_1 DS81_2 DS81_3'></togostanza-chromosome_histogram>",
+  "stanza:type": "Stanza",
+  "stanza:context": "",
+  "stanza:display": "",
+  "stanza:provider": "provider of this stanza",
+  "stanza:license": "",
+  "stanza:author": "author name",
+  "stanza:address": "name@example.org",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-03-12"
+}

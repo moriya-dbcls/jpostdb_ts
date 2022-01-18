@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "table_slice",
+  "stanza:label": "info table for slice",
+  "stanza:definition": "Display information table for slice.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "DS801_1 DS802_1 DS804_1 DS805_1 DS806_1 DS806_2 DS808_1",
+       "stanza:description": "dataset list",
+       "stanza:required": true
+     }
+  ],
+  "stanza:usage": "<togostanza-table_slice dataset='DS801_1 DS802_1 DS804_1 DS805_1 DS806_1 DS806_2 DS808_1'></togostanza-table_slice>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Other",
+  "stanza:display": "Table",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "CC BY",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-10-31",
+  "stanza:updated": "2018-03-16"
+}

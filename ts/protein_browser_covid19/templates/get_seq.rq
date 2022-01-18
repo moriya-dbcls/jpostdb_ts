@@ -1,0 +1,8 @@
+### endpoint http://db-dev.jpostdb.org/sparql2/
+PREFIX up: <http://purl.uniprot.org/uniprot/>
+PREFIX core: <http://purl.uniprot.org/core/>
+SELECT ?seq
+WHERE {
+  up:{{uniprot}} core:sequence/rdf:value ?seq .
+}
+

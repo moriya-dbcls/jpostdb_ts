@@ -1,0 +1,132 @@
+<style type="text/css">
+main {
+ -sebkit-box-shadow: none;
+ box-shadow: none;
+}
+a {
+    color: #007fb1;
+    text-decoration: none;
+}
+a:active, a:hover {
+    color: #007fb1;
+    text-decoration: underline;
+}
+div.center {
+  /*  text-align: center; */
+}
+table.info_table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+table.info_table td {
+    padding: 10px 0px 10px 0px;
+    border-bottom: solid 1px #000000;
+}
+table.info_table td.info_table_label {
+    padding-right: 40px;
+    font-weight: bold;
+}
+table.sub_info_table{
+    border-collapse: collapse;
+    width: 100%;
+    border-top: solid 1px #000000;
+}
+table.sub_info_table td{
+    padding: 10px 40px 0px 0px;
+    text-align: left;
+    border: none;
+}
+ul.info_table_list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+ul.info_table_list li {
+    line-height: 24px;
+    clear: both;
+}
+ul.table_style {
+    display: table;
+    margin: 0px;
+}
+li.list_label {
+    display: table-cell;
+    text-align: left;
+    min-width: 200px;
+}
+li.list_value {
+    display: table-cell;
+    text-align: right;
+    min-width: 200px;
+}
+a.project_id {
+    min-width: 200px;
+}
+
+</style>
+
+<div id="draw_area" class="center">
+  <table class="info_table">
+    <tr>
+      <td class="info_table_label">Project ID</td>
+      <td><ul class="table_style"><li class="list_label"><a href="https://repository.jpostdb.org/entry/{{result.project_id}}" class="project_id">{{result.project_id}}</a></li><li class="list_value">{{result.dataset_count}} datasets</li></ul></td>
+    </tr>
+    <tr>
+      <td class="info_table_label">Project title</td>
+      <td>{{result.title}}</td>
+    </tr>
+    <tr>
+      <td class="info_table_label">Project description</td>
+      <td>{{result.description}}</td>
+    </tr>
+    <tr>
+      <td class="info_table_label">Sample</td>
+      <td>
+	<ul class="info_table_list">
+	  <li><ul class="table_style"><li class="list_label">species:</li><li class="list_value">{{result.species}}</li></ul></li>
+	  {{#if result.sample_type}}
+	  <li><ul class="table_style"><li class="list_label">sample type:</li><li class="list_value">{{result.sample_type}}</li></ul></li>
+	  {{/if}}
+	  {{#if result.cell_line}}
+	  <li><ul class="table_style"><li class="list_label">cell line:</li><li class="list_value">{{result.cell_line}}</li></ul></li>
+	  {{/if}}
+	  {{#if result.organ}}
+	  <li><ul class="table_style"><li class="list_label">organ:</li><li class="list_value">{{result.organ}}</li></ul></li>
+	  {{/if}}
+	  {{#if result.disease_class}}
+	  <li><ul class="table_style"><li class="list_label">disease:</li><li class="list_value">{{result.disease_label}}</li></ul></li>
+	  {{/if}}
+          {{#if result.fractionation}}
+          <li><ul class="table_style"><li class="list_label">fractionation:</li><li class="list_value">{{result.fractionation}}</li></ul></li>
+          {{/if}}
+	  {{#if result.plex}}
+	  <li><ul class="table_style"><li class="list_label">plex:</li><li class="list_value">
+	    <table class="sub_info_table">
+	      {{#each result.plex}}
+	      <tr><td>{{label}}</td><td>{{description}}</td></tr>
+	      {{/each}}
+	    </table>
+	  </li></ul></li>
+	  {{/if}}	  
+	</ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="info_table_label">Statistics</td>
+      <td>
+	<ul class="info_table_list">
+	 <li><ul class="table_style"><li class="list_label"># proteins:</li><li class="list_value">{{result.prt_count}}</li></ul></li>
+	 <li><ul class="table_style"><li class="list_label"># peptides:</li><li class="list_value">{{result.pep_count}}</li></ul></li>
+	 <li><ul class="table_style"><li class="list_label"># spectra:</li><li class="list_value">{{result.spc_count}}</li></ul></li>
+	</ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="info_table_label">Download</td>
+      <td>
+	<a href="https://tools.jpostdb.org/download/download.php?id={{result.id}}">{{result.id}}.tar</a>
+      </td>
+    </tr>
+  </table>
+</div>

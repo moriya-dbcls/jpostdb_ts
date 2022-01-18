@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "proteoform_browser",
+  "stanza:label": "Proteoform browser",
+  "stanza:definition": "Display the peptide sharing in isoforms and proteins.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "uniprot",
+       "stanza:example": "P01112",
+       "stanza:description": "uniprot ID",
+       "stanza:required": true 
+     },
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "DS810_1 DS811_1 DS812_1",
+       "stanza:description": "dataset",
+       "stanza:required": false 
+     },
+     {
+       "stanza:key": "peptide",
+       "stanza:example": "YDPTJEDSYR",
+       "stanza:description": "Peptide sequence",
+       "stanza:required": false
+     }
+  ],
+  "stanza:usage": "<togostanza-proteoform_browser uniprot='P01112' dataset='DS810_1 DS811_1 DS812_1'></togostanza-proteoform_browser>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Protein",
+  "stanza:display": "Other",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "MIT",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2017-03-13"
+}

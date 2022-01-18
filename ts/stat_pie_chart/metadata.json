@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "stat_pie_chart",
+  "stanza:label": "Database stat pie chart",
+  "stanza:definition": "Display statistic pie chart of database.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "type",
+       "stanza:example": "disease",
+       "stanza:description": "type: species, disease, instrument....",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "species",
+       "stanza:example": "",
+       "stanza:description": "species filter",
+       "stanza:required": false
+     },
+     {
+       "stanza:key": "species_s",
+       "stanza:example": "",
+       "stanza:description": "species string filter",
+       "stanza:required": false
+     },
+     {
+       "stanza:key": "sample_type",
+       "stanza:example": "",
+       "stanza:description": "sample type filter",
+       "stanza:required": false
+     },
+     {
+       "stanza:key": "cell_line",
+       "stanza:example": "",
+       "stanza:description": "cell line filter",
+       "stanza:required": false
+     },
+     {
+       "stanza:key": "disease",
+       "stanza:example": "",
+       "stanza:description": "disease filter",
+       "stanza:required": false
+     },
+     {
+       "stanza:key": "disease_s",
+       "stanza:example": "cancer",
+       "stanza:description": "disease string filter",
+       "stanza:required": false
+     },
+     {
+       "stanza:key": "modification",
+       "stanza:example": "",
+       "stanza:description": "modification filter",
+       "stanza:required": false
+     },
+     {
+       "stanza:key": "instrument",
+       "stanza:example": "",
+       "stanza:description": "instrument filter",
+       "stanza:required": false
+     }
+  ],
+  "stanza:usage": "<togostanza-stat_pie_chart type='disease'></togostanza-stat_pie_chart>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Dataset",
+  "stanza:display": "Chart",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "MIT",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-12-25"
+}

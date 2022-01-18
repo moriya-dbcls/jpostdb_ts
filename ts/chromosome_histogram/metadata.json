@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "chromosome_histogram",
+  "stanza:label": "Chromosome histogram",
+  "stanza:definition": "Display the detected protein bar graph in each chromosome.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "DS810_1 DS810_2 DS810_3",
+       "stanza:description": "dataset",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "slice_stanza",
+       "stanza:example": "",
+       "stanza:description": "slice flag (0,1)",
+       "stanza:required": false
+     }
+  ],
+  "stanza:usage": "<togostanza-chromosome_histogram dataset='DS810_1 DS810_2 DS810_3'></togostanza-chromosome_histogram>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Other",
+  "stanza:display": "Chart",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "MIT",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-03-12"
+}

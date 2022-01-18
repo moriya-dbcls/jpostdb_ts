@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "psm_align_compare",
+  "stanza:label": "Psm align compare",
+  "stanza:definition": "Greeting.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "uniprot",
+       "stanza:example": "Q8NFQ8",
+       "stanza:description": "UniProt ID",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "dataset1",
+       "stanza:example": "DS82_1 DS82_2 DS82_3 DS83_1 DS83_2 DS83_3",
+       "stanza:description": "dataset1",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "dataset2",
+       "stanza:example": "DS89_1 DS89_2 DS89_3",
+       "stanza:description": "dataset2",
+       "stanza:required": true
+     }
+  ],
+  "stanza:usage": "<togostanza-psm_align_compare uniprot='Q8NFQ8' dataset1='DS82_1 DS82_2 DS82_3 DS83_1 DS83_2 DS83_3' dataset2='DS89_1 DS89_2 DS89_3'></togostanza-psm_align_compare>",
+  "stanza:type": "Stanza",
+  "stanza:context": "",
+  "stanza:display": "",
+  "stanza:provider": "provider of this stanza",
+  "stanza:license": "",
+  "stanza:author": "author name",
+  "stanza:address": "name@example.org",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-03-15"
+}

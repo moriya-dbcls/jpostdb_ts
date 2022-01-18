@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "stat_pie_chart",
+  "stanza:label": "Database stat pie chart",
+  "stanza:definition": "Display statistic pie chart of database.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "type",
+       "stanza:example": "disease",
+       "stanza:description": "type: species, disease, instrument....",
+       "stanza:required": true
+     }
+  ],
+  "stanza:usage": "<togostanza-stat_pie_chart type='disease'></togostanza-stat_pie_chart>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Dataset",
+  "stanza:display": "Chart",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "CC BY",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-12-25"
+}

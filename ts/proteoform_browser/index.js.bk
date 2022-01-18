@@ -1,0 +1,39 @@
+Stanza(function(stanza, params) {
+    var array = Object.keys(params);
+    for(var i = 0; i < array.length; i++){ if(params[array[i]] && params[array[i]].match(/ /)) params[array[i]].replace(/ /g, "%20"); }
+    
+    var api = "http://db-dev.jpostdb.org/rest/api/";
+
+    var q1 = $.ajax({
+      method: 'GET',
+      url: api + 'protein_seq',
+      data: {
+        uniprot: params.uniprot
+      }
+    });
+
+    var q2 = $.ajax({
+      method: 'GET',
+      url: api + 'protein_ptm_list',
+      data: {
+        uniprot: params.uniprot,
+        tissue: params.tissue,
+        disease: params.disease,
+        modification: params.modification,
+        instrument: params.instrument,
+        instrument_mode: params.instrument_mode,
+        dataset: params.datase
+      }
+    });
+
+    var q = $.when(q1, q2);
+
+    q.then(function(seq, ptmList) {
+
+        stanza.render({
+            template: "stanza.html"
+        });
+
+        setTimeout(function(){ jpostdb.protein_browser.init(params, seq[0], ptmList[0],stanza, "#draw_area");}, 300);
+    });
+});

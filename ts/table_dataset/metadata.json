@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "table_dataset",
+  "stanza:label": "info table for dataset",
+  "stanza:definition": "Display information table for dataset.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "DS810_1",
+       "stanza:description": "dataset 1",
+       "stanza:required": true
+     }
+  ],
+  "stanza:usage": "<togostanza-table_dataset dataset='DS810_1'></togostanza-table_dataset>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Dataset",
+  "stanza:display": "Table",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "CC BY",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-10-31",
+  "stanza:updated": "2018-03-01"
+}

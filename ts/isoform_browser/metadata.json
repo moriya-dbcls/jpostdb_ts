@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "isoform_browser",
+  "stanza:label": "Isoform browser",
+  "stanza:definition": "Greeting.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "uniprot",
+       "stanza:example": "Q9Y520",
+       "stanza:description": "uniprot ID",
+       "stanza:required": true 
+     },
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "DS201_1 DS203_1 DS204_1",
+       "stanza:description": "dataset",
+       "stanza:required": false 
+     }
+  ],
+  "stanza:usage": "<togostanza-isoform_browser uniprot='Q9Y520' dataset='DS201_1 DS203_1 DS204_1'></togostanza-isoform_browser>",
+  "stanza:type": "Stanza",
+  "stanza:context": "",
+  "stanza:display": "",
+  "stanza:provider": "provider of this stanza",
+  "stanza:license": "",
+  "stanza:author": "author name",
+  "stanza:address": "name@example.org",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-04-13"
+}

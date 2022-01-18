@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "userdata_slice_comparison",
+  "stanza:label": "userdata slice comparison",
+  "stanza:definition": "Greeting.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "dataset1",
+       "stanza:example": "DS81_1,DS81_2,DS81_3",
+       "stanza:description": "user dataset",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "dataset2",
+       "stanza:example": "DS87_1,DS87_2,DS87_3,DS88_1,DS88_2,DS88_3",
+       "stanza:description": "databse dataset",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "togodb",
+       "stanza:example": "http://dev.togodb.org/db/ips_proteome_test",
+       "stanza:description": "togodb endpoint",
+	 "stanza:required": true
+     }
+  ],
+  "stanza:usage": "<togostanza-userdata_slice_comparison dataset1='DS81_1,DS81_2,DS81_3' dataset2='DS87_1,DS87_2,DS87_3,DS88_1,DS88_2,DS88_3' togodb='http://dev.togodb.org/db/ips_proteome_test'></togostanza-userdat_slice_comparison>",
+  "stanza:type": "Stanza",
+  "stanza:context": "",
+  "stanza:display": "",
+  "stanza:provider": "provider of this stanza",
+  "stanza:license": "",
+  "stanza:author": "author name",
+  "stanza:address": "name@example.org",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-10-31",
+  "stanza:updated": "2018-03-08"
+}

@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "protein_browser_covid19",
+  "stanza:label": "Protein Browser mod",
+  "stanza:definition": "Display positions of detected peptides, PSMs, variants, etc.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "uniprot",
+       "stanza:example": "P0DTC1",
+       "stanza:description": "UniProt ID",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "PXD019645-5",
+       "stanza:description": "Dataset ID",
+       "stanza:required": true
+     }
+
+  ],
+  "stanza:usage": "<togostanza-protein_browser_covid19 dataset='PXD019645-5'uniprot='P0DTC1'></togostanza-protein_browser_covid19>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Protein",
+  "stanza:display": "Other",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "CC BY",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-03-06"
+}

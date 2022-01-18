@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "dataset_chromosome",
+  "stanza:label": "Dataset Chromosome",
+  "stanza:definition": "Greeting.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "dataset",
+       "stanza:example": "DS81_1",
+       "stanza:description": "dataset",
+       "stanza:required": true
+     }
+  ],
+  "stanza:usage": "<togostanza-dataset_chromosome dataset='DS81_1'></togostanza-dataset_chromosome>",
+  "stanza:type": "Stanza",
+  "stanza:context": "",
+  "stanza:display": "",
+  "stanza:provider": "provider of this stanza",
+  "stanza:license": "",
+  "stanza:author": "author name",
+  "stanza:address": "name@example.org",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-03-05"
+}

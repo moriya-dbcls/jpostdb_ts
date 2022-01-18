@@ -1,0 +1,24 @@
+### endpoint http://db-dev.jpostdb.org/sparql2/
+PREFIX up: <http://purl.uniprot.org/uniprot/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX sio: <http://semanticscience.org/resource/SIO_>
+PREFIX faldo: <http://biohackathon.org/resource/faldo#>
+PREFIX unimod: <http://www.unimod.org/obo/unimod.obo#UNIMOD_>
+PREFIX jpo: <http://rdf.jpostdb.org/ontology/jpost.owl#>
+PREFIX : <http://rdf.jpostdb.org/entry/>
+SELECT ?mods ?mod_label ?site ?pos (COUNT (?pos) AS ?count)
+WHERE {
+  #VALUES ?mods { unimod:1 unimod:4 unimod:21 unimod:27 unimod:28 unimod:35}
+  VALUES ?mods { unimod:{{unimod}} }
+  ?mods rdfs:label ?mod_label .
+  ?protein jpo:hasDatabaseSequence up:{{uniprot}} ;
+           jpo:hasPeptideEvidence ?pepevi .
+  ?pepevi faldo:location [faldo:begin/faldo:position ?begin ] ;
+          jpo:hasPeptide/jpo:hasPsm ?psm .
+  ?psm jpo:hasModification [ a ?mods ;
+                           faldo:location/faldo:position ?position ;
+                               jpo:modificationSite ?site ] .
+  BIND (?position + ?begin -1 AS ?pos)
+}
+ORDER BY ?pos
+

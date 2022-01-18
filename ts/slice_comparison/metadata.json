@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "slice_comparison",
+  "stanza:label": "slice comparison",
+  "stanza:definition": "Protein expression comparison tool between proteome datasets.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "dataset1",
+       "stanza:example": "DS810_1 DS811_1 DS812_1 DS813_1 DS814_1",
+       "stanza:description": "dataset 1",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "dataset2",
+       "stanza:example": "DS815_1 DS816_1 DS817_1",
+       "stanza:description": "dataset 2",
+       "stanza:required": true
+     },
+     {
+       "stanza:key": "slice1",
+       "stanza:example": "hoge",
+       "stanza:description": "slice name 1",
+	 "stanza:required": false
+     },
+     {
+       "stanza:key": "slice2",
+       "stanza:example": "fuga",
+       "stanza:description": "slice name 2",
+       "stanza:required": false
+     }
+  ],
+  "stanza:usage": "<togostanza-slice_comparison dataset1='DS810_1 DS811_1 DS812_1 DS813_1 DS814_1' dataset2='DS815_1 DS816_1 DS817_1' slice1='hoge' slice2='fuga'></togostanza-slice_comparison>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Other",
+  "stanza:display": "Other",
+  "stanza:provider": "jPOST database",
+  "stanza:license": "MIT",
+  "stanza:author": "Yuki Moriya",
+  "stanza:address": "moriya@dbcls.rois.ac.jp",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-10-31",
+  "stanza:updated": "2018-03-08"
+}

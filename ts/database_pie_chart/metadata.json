@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "database_pie_chart",
+  "stanza:label": "Database pie chart",
+  "stanza:definition": "Greeting.",
+  "stanza:parameter": [
+     {
+       "stanza:key": "type",
+       "stanza:example": "disease",
+       "stanza:description": "type: species, disease",
+       "stanza:required": true
+     }
+  ],
+  "stanza:usage": "<togostanza-database_pie_chart type='disease'></togostanza-database_pie_chart>",
+  "stanza:type": "Stanza",
+  "stanza:context": "",
+  "stanza:display": "",
+  "stanza:provider": "provider of this stanza",
+  "stanza:license": "",
+  "stanza:author": "author name",
+  "stanza:address": "name@example.org",
+  "stanza:contributor": [
+  ],
+  "stanza:created": "2017-03-13",
+  "stanza:updated": "2018-03-05"
+}
